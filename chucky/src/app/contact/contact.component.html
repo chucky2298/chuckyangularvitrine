@@ -1,0 +1,87 @@
+  <h1 style="font-size: 40px;" class="text-center font-weight-bold mt-5 mb-5">Contact us</h1>
+  <div class="container col-md-8 mt-5">
+  <div>
+    <div *ngIf="!bol" class="mt-5">
+    <mat-spinner></mat-spinner><h4>Loading . . . Please Wait</h4>
+  </div>
+    <mat-list-item *ngIf="cmsg && !lob" class="mt-5">
+      <p matLine>Message sent!</p>
+    </mat-list-item>
+    <form novalidate *ngIf="bol && lob" [formGroup]="contactForm" #fform="ngForm" (ngSubmit)="onSubmit()" class="mt-5 mb-5">
+
+    <div class="form-row">
+
+    <div class="form-group col-md-6">
+      <label for="lastname">Nom</label>
+      <input class="form-control" formControlName="lastname" type="text" required>
+      <div *ngIf="formErrors.lastname">
+        <div class="font-weight-light text-danger mt-1">{{formErrors.lastname}}</div>
+      </div>
+    </div>
+    
+    <div class="form-group col-md-6">
+      <label for="firstname">Prenom</label>
+      <input class="form-control" formControlName="firstname" type="text" required>
+      <div *ngIf="formErrors.firstname">
+        <div class="font-weight-light text-danger mt-1">{{formErrors.firstname}}</div>
+      </div>
+    </div>
+
+    </div>
+
+    <div class="form-row">
+
+    <div class="form-group col-md-6">
+      <label for="email">Adresse mail</label>
+      <input class="form-control" formControlName="email" type="email">
+      <div *ngIf="formErrors.email">
+        <div class="font-weight-light text-danger mt-1">{{formErrors.email}}</div>
+      </div>
+    </div>
+    
+    <div class="form-group col-md-6">
+      <label for="telnum">Telephone</label>
+      <input class="form-control" formControlName="telnum" type="tel" pattern="[0-9]*">
+      <div *ngIf="formErrors.telnum">
+        <div class="font-weight-light text-danger mt-1">{{formErrors.telnum}}</div>
+      </div>
+    </div>
+
+    </div>
+
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea class="form-control" rows="4" formControlName="message" type="text" required></textarea>
+    <div *ngIf="formErrors.message">
+        <div class="font-weight-light text-danger mt-1">{{formErrors.message}}</div>
+    </div>
+  </div>
+
+      <button type="submit" class="btn btn-dark" [disabled]="contactForm.invalid">Envoyer</button>
+    </form>
+  </div>
+  </div>
+<!--   <div class="col-md-12 text-center">
+         <div class="border-top border-dark my-3 w-25 mx-auto"></div>
+         <h1 class="font-weight-bold">Messages</h1>
+         <div class="border-top border-dark my-3 w-25 mx-auto"></div>
+  </div>
+
+  <div class="container mb-3" *ngIf="contactmsgs">
+	<div class="card mb-2" *ngFor="let cmsgs of contactmsgs">
+  		<div class="card-body">
+		<h2 class="card-title">Sender: {{cmsgs.firstname}} {{cmsgs.lastname}}</h2>
+		<p class="card-text">Phone number: {{cmsgs.telnum}}</p>
+		<p class="card-text">Email: {{cmsgs.email}}</p>
+		<p class="card-text">Message: {{cmsgs.message}}</p>
+		<div class="d-flex flex-row-reverse">
+		</div>
+  		</div>
+	</div>
+</div>
+
+<div *ngIf="!contactmsgs" class="d-flex justify-content-center mt-5 mb-5">
+  <div class="spinner-grow" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+</div> -->

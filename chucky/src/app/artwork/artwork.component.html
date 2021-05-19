@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div *ngIf="!artworks" class="d-flex justify-content-center mt-5 mb-5">
+  <div class="column">
+  <div class="spinner-grow" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+
+</div>
+</div>
+
+<div *ngIf="artworks">
+  <div class="container mb-5 mt5" *ngIf="artworks">
+   <hr class="my-5">
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="col" *ngFor="let artwork of artworks" [routerLink]="['/artworkdetail', artwork.id]">
+       <div class="cardoda">
+        <img class="card-img-top" src="{{ baseURL + artwork.mainimage }}" alt="Card image cap" appApphighlight>
+        <ul class="social-media">
+          <li><a [routerLink]="['/artworkdetail', artwork.id]"
+            (click)="updateViews(artwork)"><i class="far fa-eye fa-lg mt-2"></i></a></li>
+          <li><a href="#"><i class="fab fa-facebook-f fa-lg mt-2"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram fa-lg mt-2"></i></a></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+  
+  </div>
+
+</body>
+
+<!-- <div class="card-body">
+          <h2 class="card-title">{{artwork.title}}</h2>
+          <h2 class="card-title font-weight-light font-italic">{{artwork.category}}</h2>
+           <p class="card-text">{{artwork.description}}</p>
+          <p class="card-text">{{artwork.likes}} Likes</p>
+          <p class="card-text font-weight-light font-italic">--Views {{artwork.views}}</p> 
+         <button type="button" class="btn btn-outline-dark btn-lg ml-3" [routerLink]="['/artworkdetail', artwork.id]"
+          (click)="updateViews(artwork)">Voir</button>
+          <button type="button" class="btn btn-warning btn-lg ml-2" (click)="sendNotif(artwork)"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+  </svg></button> 
+        </div> -->

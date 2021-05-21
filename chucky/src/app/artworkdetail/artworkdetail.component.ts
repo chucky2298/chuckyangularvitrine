@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Params, ActivatedRoute } from '@angular/router';
 import { Artwork } from '../model/artwork';
+import { ARTWORKS } from '../model/db'
 import { ArtworkService } from '../shared/artwork.service';
 import { switchMap } from 'rxjs/operators';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
@@ -17,12 +18,14 @@ export class ArtworkdetailComponent implements OnInit {
 
   errMess: string;
   artwork: Artwork;
+  artworks: Artwork[] = ARTWORKS;
   artworkIds: string[];
   baseURL = 'http://localhost:3000';
   prev: String;
   next: String;
   imagesBasic: string[];
   imageMaxHeight: string = "100%"
+
 // Maximum image height.
  
 imageMaxWidth: string = "100%"
@@ -39,7 +42,7 @@ backgroundColor: "black" | "white" = "black"
  
 backgroundOpacity: number = 0.85
 // Lightbox background opacity.
- 
+  
 animationDuration: number = 400
 // Speed of opening and closing animation.
  
@@ -59,10 +62,14 @@ disable: boolean = false
     private route: ActivatedRoute, public dialog: MatDialog) { }
 
   ngOnInit() {
-    this.artworkservice.getArtworkIds().subscribe(artworkIds => this.artworkIds = artworkIds);
+    const id = this.route.snapshot.paramMap.get('id');
+    console.log(id);
+    this.artwork = this.artworks.find(x => x.id === id);
+    this.artworkIds = this.artworks.map(artwork => artwork.id);
+    /* this.artworkservice.getArtworkIds().subscribe(artworkIds => this.artworkIds = artworkIds);
     this.route.params.pipe(switchMap((params: Params) => { return this.artworkservice.getArtwork(+params['id']); }))
     .subscribe(artwork => { this.artwork = artwork; },
-      errmess => this.errMess = <any>errmess);
+      errmess => this.errMess = <any>errmess); */
     this.imagesBasic = this.artwork.images;
   }
 

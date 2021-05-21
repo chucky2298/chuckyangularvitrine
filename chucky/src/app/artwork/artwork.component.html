@@ -19,17 +19,17 @@
 </div>
 
 <div *ngIf="artworks">
-  <div class="container mb-5 mt5" *ngIf="artworks">
-   <hr class="my-5">
-    <div class="row row-cols-1 row-cols-md-4 g-4">
+  <div class="container mb-5 mt5">
+   
+    <div class="row row-cols-1 row-cols-md-5 g-4">
       <div class="col" *ngFor="let artwork of artworks" [routerLink]="['/artworkdetail', artwork.id]">
        <div class="cardoda">
-        <img class="card-img-top" src="{{ baseURL + artwork.mainimage }}" alt="Card image cap" appApphighlight>
+        <img class="card-img-top" src="{{artwork.MainImage}}" alt="Card image cap" appApphighlight>
         <ul class="social-media">
           <li><a [routerLink]="['/artworkdetail', artwork.id]"
             (click)="updateViews(artwork)"><i class="far fa-eye fa-lg mt-2"></i></a></li>
-          <li><a href="#"><i class="fab fa-facebook-f fa-lg mt-2"></i></a></li>
-          <li><a href="#"><i class="fab fa-instagram fa-lg mt-2"></i></a></li>
+          <li><a href={{artwork.fblink}} target="_blank"><i class="fab fa-facebook-f fa-lg mt-2"></i></a></li>
+          <li><a href={{artwork.instalink}} target="_blank"><i class="fab fa-instagram fa-lg mt-2"></i></a></li>
         </ul>
       </div>
       </div>

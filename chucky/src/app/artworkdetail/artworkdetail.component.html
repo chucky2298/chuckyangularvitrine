@@ -18,14 +18,22 @@
 <button type="button" class="btn btn-dark btn-sm ml-5 mt-5" routerLink="/galerie"><i class="fas fa-arrow-left"></i></button>
 
 <h1 style="font-size: 40px;" class="text-center font-weight-bold mt-5" *ngIf="artwork">{{artwork.title}}</h1>
-<p class="text-center font-weight-normal mt-3">{{artwork.description}}</p>
-
+<p class="text-center font-weight-normal mt-3 h4">{{artwork.description}}</p>
+<div class="d-flex justify-content-center mt-5">
+  <div class="row">
+  <p class="font-weight-bold text-center">Partager</p>
+  <div class="d-flex justify-content-center">
+  <a href={{artwork.fblink}} target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+  <a href={{artwork.instalink}} target="_blank"><i class="fab fa-instagram fa-2x ml-2"></i></a>
+  </div>
+  </div>
+</div>
 <div *ngIf="artwork">
 <div class="container mb-5">
  <hr class="my-5">
 	<div class="row row-cols-1 row-cols-md-4 g-4 d-flex justify-content-center">
 		<div *ngFor="let imeg of artwork.images">
-			<img class="card-img-top" src="{{ baseURL + imeg }}" alt="Card image cap" appApphighlight lightbox>
+			<img class="card-img-top" src="{{ imeg }}" alt="Card image cap" appApphighlight lightbox>
 		</div>
 	</div>
 </div>

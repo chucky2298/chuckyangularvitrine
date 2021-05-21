@@ -11,7 +11,8 @@
 
 		<!-- Start Landing Section-->
 		 <div class="welcome">
-        <img src="http://localhost:3000/chucky/cover.png" class="img-fluid" alt="Responsive image">
+        <img src="https://scontent.ftun5-1.fna.fbcdn.net/v/t1.6435-0/p600x600/78910886_159704808745029_5203199492936957952_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=e3f864&_nc_ohc=EM1l_--JXm8AX-cCJw9&_nc_ht=scontent.ftun5-1.fna&tp=6&oh=21237e25fa02032491f04ece69ce94c8&oe=60CADFD9"
+        class="img-fluid" alt="Responsive image">
         <div class="d-flex flex-column align-items-center landing">
         	<button type="button" class="btn btn-outline-light btn-lg btn-huge" routerLink="/galerie">Galerie</button>
         </div>
@@ -32,14 +33,42 @@
 
     <!-- End About section -->
     
+  <div class="border-top border-dark my-5 w-25 mx-auto"></div>
+  <h1 style="font-size: 35px;" class="text-center font-weight-normal mt-5 mb-5">Latest albums</h1>
+  <app-artwork [artworks]="artworks"></app-artwork>
+  <div class="d-flex justify-content-center"><button routerLink="/galerie" type="button" class="btn btn-outline-dark btn-sm">See all</button></div>
 
-	<!-- Start Contact Section-->
+  <div class="border-top border-dark my-5 w-25 mx-auto"></div>
+  <h1 style="font-size: 35px;" class="text-center font-weight-normal mt-5 mb-5">Top albums</h1>
+  <app-artwork [artworks]="artworks"></app-artwork>
+  <div class="d-flex justify-content-center"><button routerLink="/galerie" type="button" class="btn btn-outline-dark btn-sm">See all</button></div>
+
+  <div class="border-top border-dark my-5 w-25 mx-auto"></div>
+  <div class="d-flex justify-content-center">
+  <img src="https://res.cloudinary.com/douscs2ve/image/upload/v1621550671/tunflix_k9lqvy.png" class="img-fluid w-25 mt-4 mb-5" style="max-width: 150px;" alt="tunflix">
+  </div>
+  <app-artwork [artworks]="artworks"></app-artwork>
+  <div class="d-flex justify-content-center"><button routerLink="/galerie" type="button" class="btn btn-outline-dark btn-sm">See all</button></div>
+  
+  <div class="container">
+    <hr class="my-5">
+    <h1 style="font-size: 35px;" class="text-center font-weight-normal mt-5 mb-5">Trending</h1>
+    <div class="d-flex flex-row align-items-center mt-3">
+    <img class="card-img-top img-fluid w-25" style="max-width: 200;" src="https://scontent.ftun5-1.fna.fbcdn.net/v/t1.6435-9/179464465_512196720162501_2818817654722610029_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=730e14&_nc_ohc=DW72XVt3_d0AX_1Bmjv&_nc_ht=scontent.ftun5-1.fna&oh=4d1a2602119c445b3f970f99af46cd95&oe=60CB405A" alt="Card image cap">
+    <div class="ml-5">
+      <p class="h2" style="color: rgb(13, 62, 134);">Harga</p>
+    <p class="font-weight-normal h4" style="color: rgb(12, 36, 71);">A new TV series called ‘Harga’, by director Lassaad Oueslati, has brought to Tunisian living rooms during the month of Ramadan the plight of illegal migrants as they struggle to flee poverty at home and battle to survive the treacherous journey across the sea.</p>
+    <p class="font-weight-normal h4" style="color: rgb(12, 36, 71);">Written by Imed Eddine Hakim, Harga tells the story of a group of Tunisians from different parts of the country who don’t know each other and find themselves crossing the Mediterranean to Italy aboard a rickety boat.</p>
+  </div>
+    </div>
+  </div>
+	
+  <!-- Start Contact Section-->
   <div class="col-md-12 text-center">
          <div class="border-top border-dark my-5 w-25 mx-auto"></div>
-         <h1>About us</h1>
-         <div class="border-top border-dark my-5 w-25 mx-auto"></div>
-         <p class="lead">Chucky est une page neutre qui critique la situation de notre pays à sa maniére.</p>
-         <button type="button" class="btn btn-lg btn-outline-dark mb-5 mt-5" routerLink="/contact">Contact Us</button>
+         <h1>About me</h1>
+         <p class="h5">Chucky is a Tunisian digital artist and design freelancer.</p>
+         <button type="button" class="btn btn-lg btn-outline-dark mb-5 mt-5" routerLink="/contact">Contact me</button>
   </div>
 	<!-- End Contact Section-->
 

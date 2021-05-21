@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Artwork } from '../model/artwork';
+import { ARTWORKS } from '../model/db';
 import { ArtworkService } from '../shared/artwork.service';
 import { Comment } from '../model/comment';
 import { CommentService } from '../shared/comment.service';
@@ -71,9 +72,10 @@ export class GalerieComponent implements OnInit {
    this.createForm(); }
   
   ngOnInit(): void {
-  this.artworkService.getArtworks()
+  /* this.artworkService.getArtworks()
     .subscribe(artworks => { this.artworks = artworks; this.resetartworks=artworks; this.bol=true; },
-      errmess => this.errMess = <any>errmess);
+      errmess => this.errMess = <any>errmess); */
+      this.artworks = ARTWORKS;
     
   this.commentService.getComments()
     .subscribe(comments => this.commentes = comments,
@@ -82,9 +84,14 @@ export class GalerieComponent implements OnInit {
   }
 
   resetArt(){
-  	this.artworks=this.resetartworks;
+  	this.artworks= ARTWORKS;
     this.searchExists=false;
     this.searchNotFound=false;
+    if(this.srch){
+  		this.srch=false;
+  	}
+  	else
+  		this.srch=true;
   }
 
   createForm() {

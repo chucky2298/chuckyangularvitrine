@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Artwork } from '../model/artwork';
+import { ARTWORKS } from '../model/db';
 import { ArtworkService } from '../shared/artwork.service';
 import { MatCarouselSlide, MatCarouselSlideComponent } from '@ngmodule/material-carousel';
 
@@ -11,16 +12,14 @@ import { MatCarouselSlide, MatCarouselSlideComponent } from '@ngmodule/material-
 export class HomeComponent implements OnInit {
 
   errMess: string;
-  artworks: Artwork[];
+  artworks: Artwork[] = ARTWORKS;
   bol=false;
   baseURL = 'http://localhost:3000';
 
   constructor(private artworkService: ArtworkService) { }
   
   ngOnInit(): void {
-  this.artworkService.getHomeArtworks()
-    .subscribe(artworks => { this.artworks = artworks; this.bol=true; },
-      errmess => this.errMess = <any>errmess);
+  
   }
 
   incrementLike(art: Artwork){

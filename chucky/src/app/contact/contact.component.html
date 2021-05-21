@@ -12,7 +12,7 @@
     <div class="form-row">
 
     <div class="form-group col-md-6">
-      <label for="lastname">Nom</label>
+      <label for="lastname">Nom *</label>
       <input class="form-control" formControlName="lastname" type="text" required>
       <div *ngIf="formErrors.lastname">
         <div class="font-weight-light text-danger mt-1">{{formErrors.lastname}}</div>
@@ -20,7 +20,7 @@
     </div>
     
     <div class="form-group col-md-6">
-      <label for="firstname">Prenom</label>
+      <label for="firstname">Prenom *</label>
       <input class="form-control" formControlName="firstname" type="text" required>
       <div *ngIf="formErrors.firstname">
         <div class="font-weight-light text-danger mt-1">{{formErrors.firstname}}</div>
@@ -50,7 +50,7 @@
     </div>
 
   <div class="form-group">
-    <label for="message">Message</label>
+    <label for="message">Message *</label>
     <textarea class="form-control" rows="4" formControlName="message" type="text" required></textarea>
     <div *ngIf="formErrors.message">
         <div class="font-weight-light text-danger mt-1">{{formErrors.message}}</div>

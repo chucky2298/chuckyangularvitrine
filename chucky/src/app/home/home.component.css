@@ -4,3 +4,15 @@
     padding-left: 30px;
     padding-right: 30px;
 }
+.card-img-top {
+    transition: all 0.5s ease;
+    -webkit-filter: opacity(1); 
+    filter: opacity(1);
+    opacity: 1;
+  }
+  
+  .card-img-top:hover {
+    transition: all 0.5s ease;
+    -webkit-filter: opacity(0.75); 
+    filter: opacity(0.75);
+  }

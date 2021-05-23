@@ -17,12 +17,32 @@ a:focus {
     -webkit-filter: opacity(1); 
     filter: opacity(1);
     opacity: 1;
+    width: 16.2vw;
+    height: 21vw;
+    object-fit: cover;
+  }
+
+  .card-text{
+    opacity: 0;
+    position: absolute;
+    top: 70%;
+    color: black;
+  }
+
+  .cardoda:hover > .card-text {
+    transition: all 0.5s ease; 
+    opacity: 1;
+    filter: opacity(1);
   }
   
+  .cardoda{
+    transition: all 1s ease;
+  }
+
   .cardoda:hover > .card-img-top {
     transition: all 1s ease;
-    -webkit-filter: opacity(0.75); 
-    filter: opacity(0.75);
+    -webkit-filter: opacity(0.2); 
+    filter: opacity(0.2);
   }
   .social-media:hover > .card-img-top {
     transition: all 1s ease;

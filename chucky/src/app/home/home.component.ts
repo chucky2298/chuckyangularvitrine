@@ -15,13 +15,32 @@ export class HomeComponent implements OnInit {
   artworks: Artwork[] = ARTWORKS;
   bol=false;
   baseURL = 'http://localhost:3000';
+  topartworks: Artwork[] = ARTWORKS.sort((n1,n2)=> n2.rating-n1.rating).slice(0,5);
+  latestartworks: Artwork[] = ARTWORKS.sort((a,b)=>
+  (new Date(b.date)).getTime() - (new Date(a.date)).getTime()
+  ).slice(0,5);
+  tunflixartworks: Artwork[];
+  searchart: Artwork[] = new Array();
+  
 
   constructor(private artworkService: ArtworkService) { }
   
   ngOnInit(): void {
-  
+    this.onSearch('tunflix');
   }
-
+  onSearch(rech){
+    rech='tunflix';
+  	this.searchart= new Array();
+  	for(var a of ARTWORKS){
+  		if ((a.title.search(rech) == -1) && (a.description.search(rech) == -1) && (a.category.search(rech) == -1)) { 
+   console.log("Does not contain" ); 
+} else { 
+   this.searchart.push(a); 
+}
+  	}
+  	console.log(this.searchart);
+  	this.tunflixartworks=this.searchart.slice(0,5);
+  }
   incrementLike(art: Artwork){
     art.likes= art.likes+1;
     

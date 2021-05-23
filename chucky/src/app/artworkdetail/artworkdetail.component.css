@@ -10,3 +10,7 @@
     -webkit-filter: opacity(0.75); 
     filter: opacity(0.75);
   }
+
+  .card-columns {
+    column-count: 5;
+  }

@@ -9,6 +9,7 @@ import { Params, ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { flyInOut, expand } from '../animations/app.animation';
+import {formatDate} from '@angular/common';
 
 @Component({
   selector: 'app-galerie',
@@ -39,6 +40,8 @@ export class GalerieComponent implements OnInit {
   srch=false;
   searchExists= false;
   searchNotFound=false;
+  sortdate=false;
+  sortbest=true;
   baseURL = 'http://localhost:3000';
   val1='Ajouter';
   val2='Your comment';
@@ -76,6 +79,7 @@ export class GalerieComponent implements OnInit {
     .subscribe(artworks => { this.artworks = artworks; this.resetartworks=artworks; this.bol=true; },
       errmess => this.errMess = <any>errmess); */
       this.artworks = ARTWORKS;
+      this.sortBest();
     
   this.commentService.getComments()
     .subscribe(comments => this.commentes = comments,
@@ -85,6 +89,7 @@ export class GalerieComponent implements OnInit {
 
   resetArt(){
   	this.artworks= ARTWORKS;
+    this.sortBest();
     this.searchExists=false;
     this.searchNotFound=false;
     if(this.srch){
@@ -149,14 +154,12 @@ export class GalerieComponent implements OnInit {
 
   onSearch(rech){
   	this.searchart= new Array();
-  	for(var a of this.artworks){
-  		if ((a.title.search(rech) == -1) && (a.description.search(rech) == -1) ) { 
+  	for(var a of ARTWORKS){
+  		if ((a.title.search(rech) == -1) && (a.description.search(rech) == -1) && (a.category.search(rech) == -1)) { 
    console.log("Does not contain" ); 
 } else { 
    this.searchart.push(a); 
 }
-
-
   	}
   	console.log(this.searchart);
   	this.artworks=this.searchart;
@@ -165,8 +168,21 @@ export class GalerieComponent implements OnInit {
     {this.searchNotFound=true;}
   }
 
+
   sortLikes(){
   	this.artworks.sort((n1,n2)=> n2.likes-n1.likes);
+  }
+  sortDate(){
+    this.sortdate=true;
+    this.sortbest=false;
+  	this.artworks.sort((a,b)=>
+      (new Date(b.date)).getTime() - (new Date(a.date)).getTime()
+    );
+  }
+  sortBest(){
+    this.sortbest=true;
+    this.sortdate=false;
+  	this.artworks.sort((n1,n2)=> n2.rating-n1.rating);
   }
   sortViews(){
   	this.artworks.sort((n1,n2)=> n2.views-n1.views);

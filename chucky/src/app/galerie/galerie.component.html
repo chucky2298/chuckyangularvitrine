@@ -19,17 +19,7 @@
           <form #f="ngForm" class="mt-5">
           <div class="input-group">
             <div class="input-group-btn search-panel">
-              <!-- <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                    	<span id="search_concept">Filter by</span> <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href="#contains">Contains</a></li>
-                      <li><a href="#its_equal">It's equal</a></li>
-                      <li><a href="#greather_than">Greather than ></a></li>
-                      <li><a href="#less_than">Less than < </a></li>
-                      <li class="divider"></li>
-                      <li><a href="#all">Anything</a></li>
-                    </ul> -->
+              
             </div>
             <div class="column">
             <input class="form-control" type="text" placeholder="Search" aria-label="Search" name="sech"
@@ -61,23 +51,33 @@
     <div class="container mt-5 mb-5" *ngIf="srch">
       <div class="mt-5">
         <p class="h4">Tags:</p>
-        <button type="button" class="btn btn-dark mr-2 mt-2" (click)="sortLikes()">Top albums</button>
-        <button type="button" class="btn btn-dark mr-2 mt-2" (click)="sortViews()">Tunflix</button>
-        <button type="button" class="btn btn-dark mr-2 mt-2" (click)="sortViews()">Corona</button>
-        <button type="button" class="btn btn-dark mr-2 mt-2" (click)="sortViews()">Tunisian language</button>
-        <button type="button" class="btn btn-dark mr-2 mt-2" (click)="sortViews()">Humour</button>
-        <button type="button" class="btn btn-dark mr-2 mt-2" (click)="sortViews()">Tunisian series</button>
-        <button type="button" class="btn btn-dark mr-2 mt-2" (click)="sortViews()">Tunisia beauty</button>
-        <button type="button" class="btn btn-dark mr-2 mt-2" (click)="sortViews()">Design</button>
-        <button type="button" class="btn btn-dark mr-2 mt-2" (click)="sortViews()">Music</button>
-        <button type="button" class="btn btn-dark mr-2 mt-2" (click)="sortViews()">Sports</button>
-        <button type="button" class="btn btn-dark mr-2 mt-2" (click)="sortViews()">International brands</button>
+        <button type="button" class="btn btn-primary mr-2 mt-2" (click)="onSearch('top')">Top albums</button>
+        <button type="button" class="btn btn-danger mr-2 mt-2" (click)="onSearch('tunflix')">Tunflix</button>
+        <button type="button" class="btn btn-info mr-2 mt-2" (click)="onSearch('corona')">Corona</button>
+        <button type="button" class="btn btn-danger mr-2 mt-2" (click)="onSearch('language')">Tunisian language</button>
+        <button type="button" class="btn btn-warning mr-2 mt-2" (click)="onSearch('humour')">Humour</button>
+        <button type="button" class="btn btn-danger mr-2 mt-2" (click)="onSearch('series')">Tunisian series</button>
+        <button type="button" class="btn btn-danger mr-2 mt-2" (click)="onSearch('beauty')">Tunisia beauty</button>
+        <button type="button" class="btn btn-primary mr-2 mt-2" (click)="onSearch('design')">Design</button>
+        <button type="button" class="btn btn-secondary mr-2 mt-2" (click)="onSearch('music')">Music</button>
+        <button type="button" class="btn btn-secondary mr-2 mt-2" (click)="onSearch('sport')">Sports</button>
+        <button type="button" class="btn btn-secondary mr-2 mt-2" (click)="onSearch('brand')">International brands</button>
+        <button type="button" class="btn btn-primary mr-2 mt-2" (click)="onSearch('photoshop')">Photoshop art</button>
+        <button type="button" class="btn btn-primary mr-2 mt-2" (click)="onSearch('poster')">Posters</button>
+        <button type="button" class="btn btn-secondary mr-2 mt-2" (click)="onSearch('other')">Other</button>
       </div>
     </div>
   </div>
 
   <div class="container">
     <hr class="my-5">
+    <div class="d-flex flex-row mb-5 justify-content-center">
+    <p class="h6 mt-2 primary">Sort by: </p>
+    <button *ngIf="!sortdate" type="button" class="btn btn-primary btn-sm ml-2" (click)="sortDate()">Date</button>
+    <button *ngIf="sortdate" type="button" class="btn btn-outline-primary btn-sm ml-2" (click)="sortDate()" disabled>Date</button>
+    <button *ngIf="!sortbest" type="button" class="btn btn-primary btn-sm ml-2" (click)="sortBest()">Best</button>
+    <button *ngIf="sortbest" type="button" class="btn btn-outline-primary btn-sm ml-2" (click)="sortBest()" disabled>Best</button>
+  </div>
   </div>
   <app-artwork (notifLike)="incrementLike($event)" [artworks]="artworks"></app-artwork>
    

@@ -34,23 +34,23 @@ export class ContactComponent implements OnInit {
 
   validationMessages = {
     'firstname': {
-      'required':      'Prenom est vide.',
-      'minlength':     'Prenom est composé au moins de 2 caractéres.',
-      'maxlength':     'Prenom est composé au maximum de 25 caractéres.'
+      'required':      'First name is required.',
+      'minlength':     'First name is too short.',
+      'maxlength':     'First name is too long.'
     },
     'lastname': {
-      'required':      'Nom est vide.',
-      'minlength':     'Nom est composé au moins de 2 caractéres.',
-      'maxlength':     'Nom est composé au maximum de 25 caractéres.'
+      'required':      'Last name is required',
+      'minlength':     'Last name is too short.',
+      'maxlength':     'Last name is too long.'
     },
     'telnum': {
-      'pattern':       'Numero invalide'
+      'pattern':       'Invalid number.'
     },
     'email': {
-      'email':         'Adresse mail invalide.'
+      'email':         'Invalid email.'
     },
     'message': {
-      'required':         'Votre message est vide.'
+      'required':         'Your message is required.'
     },
 
   };	

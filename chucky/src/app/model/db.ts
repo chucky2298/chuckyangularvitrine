@@ -813,7 +813,7 @@ export const ARTWORKS: Artwork[] = [
           },
           {
             "id": "45",
-            "title": "Little trip to Djerba island",
+            "title": "Little trip to Djerba",
             "MainImage": "https://scontent.ftun5-1.fna.fbcdn.net/v/t1.6435-9/83020864_174960113886165_4947896702603362304_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=730e14&_nc_ohc=VmFna4PSwpsAX9TcjvF&_nc_ht=scontent.ftun5-1.fna&oh=c8a47e2a937c8c73421775daf1aff54f&oe=60D09273",
             "rating": 10,
             "category": "tunisian beauty djerba photoshop top",

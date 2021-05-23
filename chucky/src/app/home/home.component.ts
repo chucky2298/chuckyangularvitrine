@@ -15,10 +15,10 @@ export class HomeComponent implements OnInit {
   artworks: Artwork[] = ARTWORKS;
   bol=false;
   baseURL = 'http://localhost:3000';
-  topartworks: Artwork[] = ARTWORKS.sort((n1,n2)=> n2.rating-n1.rating).slice(0,5);
+  topartworks: Artwork[] = ARTWORKS.sort((n1,n2)=> n2.rating-n1.rating).slice(0,4);
   latestartworks: Artwork[] = ARTWORKS.sort((a,b)=>
   (new Date(b.date)).getTime() - (new Date(a.date)).getTime()
-  ).slice(0,5);
+  ).slice(0,4);
   tunflixartworks: Artwork[];
   searchart: Artwork[] = new Array();
   
@@ -39,7 +39,7 @@ export class HomeComponent implements OnInit {
 }
   	}
   	console.log(this.searchart);
-  	this.tunflixartworks=this.searchart.slice(0,5);
+  	this.tunflixartworks=this.searchart.slice(0,4);
   }
   incrementLike(art: Artwork){
     art.likes= art.likes+1;

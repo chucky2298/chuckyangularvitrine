@@ -10,6 +10,20 @@
   }
 }
 
+@media only screen and (max-width : 768px) {
+  .card-img-top {
+    transition: all 1s ease;
+    -webkit-filter: opacity(1); 
+    filter: opacity(1);
+    opacity: 1;
+    width: 87vw;
+    height: 120vw;
+    object-fit: cover;
+  }
+}
+
+
+
 a,
 a:hover,
 a:focus {

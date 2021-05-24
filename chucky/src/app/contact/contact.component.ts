@@ -6,6 +6,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { flyInOut, expand } from '../animations/app.animation';
 import { Contactmsg } from '../model/contactmsg';
 import { ContactmsgService } from '../shared/contactmsg.service';
+import { AngularFirestore } from "@angular/fire/firestore";
+
 
 @Component({
   selector: 'app-contact',
@@ -19,6 +21,7 @@ export class ContactComponent implements OnInit {
   contactmsgs : Contactmsg[];
   bol=true;
   lob=true;
+  msgsent=false;
   baseURL = 'http://localhost:3000';
   d = new Date();
   n = this.d.toISOString();
@@ -56,7 +59,7 @@ export class ContactComponent implements OnInit {
   };	
 
   constructor(private contactmsgService: ContactmsgService,
-    private fb: FormBuilder) {
+    private fb: FormBuilder, private firestore: AngularFirestore) {
     this.createForm();
   }
 
@@ -120,5 +123,23 @@ export class ContactComponent implements OnInit {
       message: ''
     });
   }
+
+  onSubmitted() {
+    this.firestore.collection('contactmsgs').add({
+        firstname: this.contactForm.value.firstname,
+        lastname: this.contactForm.value.lastname,
+        telnum: this.contactForm.value.telnum,
+        email: this.contactForm.value.email,
+        message: this.contactForm.value.message
+    })
+    .then(res => {
+        console.log(res);
+        this.msgsent=true;
+        setTimeout(() => {  this.msgsent=false; this.contactForm.reset(); }, 5000);
+    })
+    .catch(e => {
+        console.log(e);
+    })
+}
 
 }

@@ -7,7 +7,7 @@
     <mat-list-item *ngIf="cmsg && !lob" class="mt-5">
       <p matLine>Message sent!</p>
     </mat-list-item>
-    <form novalidate *ngIf="bol && lob" [formGroup]="contactForm" #fform="ngForm" (ngSubmit)="onSubmit()" class="mt-5 mb-5">
+    <form novalidate *ngIf="bol && lob" [formGroup]="contactForm" #fform="ngForm" (ngSubmit)="onSubmitted()" class="mt-5 mb-5">
 
     <div class="form-row">
 
@@ -57,7 +57,8 @@
     </div>
   </div>
 
-      <button type="submit" class="btn btn-dark" [disabled]="contactForm.invalid">Send</button>
+      <button *ngIf="!msgsent" type="submit" class="btn btn-dark" [disabled]="contactForm.invalid">Send</button>
+      <button *ngIf="msgsent" type="submit" class="btn btn-success" disabled>Message sent!</button>
     </form>
   </div>
   </div>

@@ -38,6 +38,18 @@ import { LightboxModule } from 'ngx-lightbox';
 import {CrystalLightboxModule} from '@crystalui/angular-lightbox';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+
+var firebaseConfig = {
+  apiKey: "AIzaSyCCzDLBxjekDFcfBliMeNIWhH0JCBJJwGs",
+  authDomain: "chuckytn-79fb8.firebaseapp.com",
+  databaseURL: "https://chuckytn-79fb8-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "chuckytn-79fb8",
+  storageBucket: "chuckytn-79fb8.appspot.com",
+  messagingSenderId: "494978899470",
+  appId: "1:494978899470:web:6defcd4ae7f5c3d7e5265f"
+};
 
 @NgModule({
   declarations: [
@@ -76,7 +88,9 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
     HttpClientModule,
     CrystalLightboxModule,
     MatCarouselModule.forRoot(),
-    LightboxModule
+    LightboxModule,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFirestoreModule
   ],
   providers: [ArtworkService, CommentService, CommentService, ProcessHTTPMsgService, {provide: 'BaseURL', useValue: baseURL}],
   bootstrap: [AppComponent]

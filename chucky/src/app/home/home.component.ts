@@ -3,6 +3,7 @@ import { Artwork } from '../model/artwork';
 import { ARTWORKS } from '../model/db';
 import { ArtworkService } from '../shared/artwork.service';
 import { MatCarouselSlide, MatCarouselSlideComponent } from '@ngmodule/material-carousel';
+import { AngularFirestore } from "@angular/fire/firestore";
 
 @Component({
   selector: 'app-home',
@@ -14,6 +15,7 @@ export class HomeComponent implements OnInit {
   errMess: string;
   artworks: Artwork[] = ARTWORKS;
   bol=false;
+  amigo: number;
   baseURL = 'http://localhost:3000';
   topartworks: Artwork[] = ARTWORKS.sort((n1,n2)=> n2.rating-n1.rating).slice(0,4);
   latestartworks: Artwork[] = ARTWORKS.sort((a,b)=>
@@ -23,10 +25,14 @@ export class HomeComponent implements OnInit {
   searchart: Artwork[] = new Array();
   
 
-  constructor(private artworkService: ArtworkService) { }
+  constructor(private artworkService: ArtworkService, private firestore: AngularFirestore) { }
   
   ngOnInit(): void {
+
     this.onSearch('tunflix');
+    this.firestore.collection("views").add({
+      view: 'new'});
+
   }
   onSearch(rech){
     rech='tunflix';

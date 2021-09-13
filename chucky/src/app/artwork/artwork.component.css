@@ -4,13 +4,13 @@
     -webkit-filter: opacity(1); 
     filter: opacity(1);
     opacity: 1;
-    width: 22vw;
-    height: 29vw;
+    width: 18vw;
+    height: 23vw;
     object-fit: cover;
   }
 }
 
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 770px) {
   .card-img-top {
     transition: all 1s ease;
     -webkit-filter: opacity(1); 

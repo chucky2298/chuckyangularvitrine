@@ -2,6 +2,29 @@ import { Artwork } from './artwork';
 
 export const ARTWORKS: Artwork[] = [
           {
+            "id": "100",
+            "title": "App/companies designing cookies",
+            "MainImage": "https://media-exp1.licdn.com/dms/image/C5622AQGHSp_K6sXGjw/feedshare-shrink_2048_1536/0/1632731204543?e=1636588800&v=beta&t=QJecb5kY-HgAomH0VGZ1Xe0Ild4lipRjRTZzwGLO6C0",
+            "rating": 12,
+            "category": "brand cookies food humour design",
+            "description": "What if companies/Apps decided to sell you cookies? I imagined the results for you, and it's quite hilarious!",
+            "images": [
+              "https://media-exp1.licdn.com/dms/image/C5622AQGHSp_K6sXGjw/feedshare-shrink_2048_1536/0/1632731204543?e=1636588800&v=beta&t=QJecb5kY-HgAomH0VGZ1Xe0Ild4lipRjRTZzwGLO6C0",
+              "https://media-exp1.licdn.com/dms/image/C5622AQEzQYX8E6t32A/feedshare-shrink_2048_1536/0/1632731202477?e=1636588800&v=beta&t=rAr4Zzje9ZcF4cjR-tmFF15JQic0vvqV4Yd-3Bcails",
+              "https://media-exp1.licdn.com/dms/image/C5622AQF8tKrcJiFoUg/feedshare-shrink_2048_1536/0/1632731202371?e=1636588800&v=beta&t=UkTCoE2pAU1tbEmcWALJZcF594AC9wPdtJz3kfL24Gg",
+              "https://media-exp1.licdn.com/dms/image/C5622AQE9F-YasWrE4g/feedshare-shrink_2048_1536/0/1632731206225?e=1636588800&v=beta&t=Q8F2zEV05MauGsx1nrSJPUMGo9fq8fVN1DdLX0hGxX4",
+              "https://media-exp1.licdn.com/dms/image/C5622AQHbYbCWzvjJRw/feedshare-shrink_2048_1536/0/1632731205216?e=1636588800&v=beta&t=g7k5CqLZgv6_W1bOhyRHgfFA1fd4TDEvftP30w9165c",
+              "https://media-exp1.licdn.com/dms/image/C5622AQH7J71g-Hh31w/feedshare-shrink_2048_1536/0/1632731206767?e=1636588800&v=beta&t=1_hve-zMJAFCLRPTAnOgV2KVb_63L6VeFo7ETWlXoV0",
+              "https://media-exp1.licdn.com/dms/image/C5622AQH1VX2dILtBRg/feedshare-shrink_2048_1536/0/1632731205070?e=1636588800&v=beta&t=tYTaoz7WGh_I0PljneQc9Y9yK8_bwUilkt21FdMV09A",
+              "https://media-exp1.licdn.com/dms/image/C5622AQFqMTbE6YhLnw/feedshare-shrink_2048_1536/0/1632731206661?e=1636588800&v=beta&t=f7cTDq2TxcXJCNTmU0aWu3H97r5awEIbmsjCGV3O1QE"
+            ],
+            "date":"2021-10-10",
+            "fblink":"https://www.linkedin.com/feed/update/urn:li:activity:6848171036282896385/",
+            "instalink":"https://www.linkedin.com/feed/update/urn:li:activity:6848171036282896385/",
+            "likes": 8,
+            "views": 28
+          },
+          {
             "id": "0",
             "title": "Choufli hal on Netflix",
             "MainImage": "https://res.cloudinary.com/douscs2ve/image/upload/v1621528430/chouflihal_bdzb9v.jpg",

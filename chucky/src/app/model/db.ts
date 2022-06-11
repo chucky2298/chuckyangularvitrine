@@ -34,7 +34,7 @@ export const ARTWORKS: Artwork[] = [
     MainImage:
       'https://res.cloudinary.com/douscs2ve/image/upload/v1654988615/c_u41rru.jpg',
     rating: 12,
-    category: 'brand cookies food humour design',
+    category: 'brand cookies food humour design viral',
     description:
       "What if companies/Apps decided to sell you cookies? I imagined the results for you, and it's quite hilarious!",
     images: [

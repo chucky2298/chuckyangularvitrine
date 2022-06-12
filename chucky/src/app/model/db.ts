@@ -60,7 +60,7 @@ export const ARTWORKS: Artwork[] = [
     MainImage:
       'https://res.cloudinary.com/douscs2ve/image/upload/v1654988991/2_hhkbx3.jpg',
     rating: 12,
-    category: 'music jobs humour design fun',
+    category: 'music jobs humour design fun ',
     description:
       'What if famous artists from the music industry had jobs on LinkedIn nowadays?',
     images: [

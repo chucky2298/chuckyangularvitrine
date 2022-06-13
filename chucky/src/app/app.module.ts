@@ -42,13 +42,13 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 var firebaseConfig = {
-  apiKey: "AIzaSyCCzDLBxjekDFcfBliMeNIWhH0JCBJJwGs",
-  authDomain: "chuckytn-79fb8.firebaseapp.com",
-  databaseURL: "https://chuckytn-79fb8-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId: "chuckytn-79fb8",
-  storageBucket: "chuckytn-79fb8.appspot.com",
-  messagingSenderId: "494978899470",
-  appId: "1:494978899470:web:6defcd4ae7f5c3d7e5265f"
+  apiKey: 'AIzaSyCpHboQTzPjVFrkusRTyQ98S9JRvJeZ_mY',
+  authDomain: 'chucky-e5548.firebaseapp.com',
+  projectId: 'chucky-e5548',
+  storageBucket: 'chucky-e5548.appspot.com',
+  messagingSenderId: '359341642080',
+  appId: '1:359341642080:web:58c10134cb1c67c2db8e05',
+  measurementId: 'G-TH5GGHN2EC',
 };
 
 @NgModule({

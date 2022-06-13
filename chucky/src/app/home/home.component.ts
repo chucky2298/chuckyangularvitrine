@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
   artworks: Artwork[] = ARTWORKS;
   bol=false;
   amigo: number;
+	date: Date = new Date();
   baseURL = 'http://localhost:3000';
   topartworks: Artwork[] = ARTWORKS.sort((n1,n2)=> n2.rating-n1.rating).slice(0,4);
   latestartworks: Artwork[] = ARTWORKS.sort((a,b)=>
@@ -31,7 +32,7 @@ export class HomeComponent implements OnInit {
 
     this.onSearch('tunflix');
     this.firestore.collection("views").add({
-      view: 'new'});
+      view: this.date});
 
   }
   onSearch(rech){

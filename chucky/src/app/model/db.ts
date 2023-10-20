@@ -80,7 +80,7 @@ export const ARTWORKS: Artwork[] = [
       'https://www.linkedin.com/feed/update/urn:li:activity:6939840662397702144/',
     likes: 8,
     views: 28,
-  },
+  },/* 
   {
     id: '0',
     title: 'Choufli hal on Netflix',
@@ -102,8 +102,8 @@ export const ARTWORKS: Artwork[] = [
     instalink: 'https://www.instagram.com/p/CIFxzn_n99B/',
     likes: 8,
     views: 28,
-  },
-  {
+  }, */
+  /* {
     id: '1',
     title: 'International brands in Tunisia',
     MainImage:
@@ -124,7 +124,7 @@ export const ARTWORKS: Artwork[] = [
     instalink: 'https://www.instagram.com/p/CLwElyvHFgA/',
     likes: 8,
     views: 26,
-  },
+  }, *//* 
   {
     id: '2',
     title: 'Ramadan 2021 series',
@@ -142,7 +142,7 @@ export const ARTWORKS: Artwork[] = [
     instalink: 'https://www.instagram.com/p/COPfbQ4HBNh/',
     likes: 8,
     views: 28,
-  },
+  }, 
   {
     id: '3',
     title: 'Emily in Tunis after Paris',
@@ -165,7 +165,7 @@ export const ARTWORKS: Artwork[] = [
     instalink: 'https://www.instagram.com/p/CGevdFTnT_w/',
     likes: 8,
     views: 26,
-  } /* ,
+  } ,
         {
             "id": "4",
             "title": "Social media supporting Gaza",
@@ -184,7 +184,7 @@ export const ARTWORKS: Artwork[] = [
             "likes": 8,
             "views": 28
           } */,
-  {
+  /* {
     id: '5',
     title: 'Tunisia electorals: Part 1',
     MainImage:
@@ -262,7 +262,7 @@ export const ARTWORKS: Artwork[] = [
     instalink: 'https://www.instagram.com/p/B34i5u0lGP8/',
     likes: 8,
     views: 28,
-  } /* ,
+  }  *//* ,
           {
             "id": "8",
             "title": "Tunisian premier league",
@@ -284,7 +284,7 @@ export const ARTWORKS: Artwork[] = [
             "likes": 8,
             "views": 28
           } */,
-  {
+/*   {
     id: '9',
     title: 'JCC Carthage Film Festival',
     MainImage:
@@ -306,7 +306,7 @@ export const ARTWORKS: Artwork[] = [
     instalink: 'https://www.instagram.com/p/B4Dzk3flmYm/',
     likes: 8,
     views: 28,
-  },
+  }, */
   /* {
     id: '10',
     title: 'The Tunisian island shape',
@@ -583,7 +583,7 @@ export const ARTWORKS: Artwork[] = [
       'https://www.facebook.com/114535926595251/posts/159403198775190/',
     likes: 8,
     views: 28,
-  },*/
+  },
   {
     id: '23',
     title: 'Relook for Tunisian logos',
@@ -607,7 +607,7 @@ export const ARTWORKS: Artwork[] = [
     likes: 8,
     views: 28,
   },
-  /* {
+  {
             "id": "24",
             "title": "Tunisian proverbs guessing",
             "MainImage": "https://scontent.ftun5-1.fna.fbcdn.net/v/t1.6435-9/79305904_160543861994457_5996472066948202496_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=730e14&_nc_ohc=BcqZtzlCfHgAX_Dwxhr&_nc_ht=scontent.ftun5-1.fna&oh=33ba6e0125c3ed17b2e2ebeb36cc7724&oe=60CD2D43",
@@ -649,7 +649,7 @@ export const ARTWORKS: Artwork[] = [
     instalink: 'https://www.instagram.com/p/B6LCbhTnZ9a/',
     likes: 8,
     views: 28,
-  },*/
+  },
   {
     id: '26',
     title: 'Tunisian products slogans',
@@ -673,7 +673,7 @@ export const ARTWORKS: Artwork[] = [
     likes: 8,
     views: 28,
   },
-  /* {
+  {
     id: '27',
     title: 'Just pilau of Rafraf flying',
     MainImage:
@@ -1125,36 +1125,24 @@ export const ARTWORKS: Artwork[] = [
     id: '53',
     title: 'Logos for Tunisian cities',
     MainImage:
-      'https://scontent-muc2-1.xx.fbcdn.net/v/t1.6435-9/84708941_191040802278096_5101385802831626240_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=H6NcA4BB-wIAX99yBes&_nc_ht=scontent-muc2-1.xx&oh=00_AT--pVHtIDfMNPXaYTXW1JXPaeqMeHSaKnOXlGw9rC9_JQ&oe=62CBA6B7',
+      'https://res.cloudinary.com/douscs2ve/image/upload/v1697831959/1623317030267_udme7f.jpg',
     rating: 10,
     category: 'tunisian beauty cities logos design top',
     description: 'Minimalist typographic logos for Tunisian cities',
     images: [
-      'https://scontent.ftun5-1.fna.fbcdn.net/v/t1.6435-9/84708941_191040802278096_5101385802831626240_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=730e14&_nc_ohc=OAYukbhRar0AX-HDXWH&_nc_ht=scontent.ftun5-1.fna&oh=e0bb754a03ac92ee854328bcbafcb93c&oe=60CD7237',
-      'https://scontent.ftun5-1.fna.fbcdn.net/v/t1.6435-9/86625255_191619285553581_8628449054096883712_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=730e14&_nc_ohc=wsBhv49k6PkAX-2Emky&_nc_ht=scontent.ftun5-1.fna&oh=79eaabdd0a600836ca468771351f59e5&oe=60CFB064',
-      'https://scontent.ftun5-1.fna.fbcdn.net/v/t1.6435-9/84745024_191040335611476_3321126595988553728_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=730e14&_nc_ohc=bGUjj2AISgoAX_wpaDF&_nc_ht=scontent.ftun5-1.fna&oh=bb0da7462485b9ae72ef87fb5aae202a&oe=60CECE28',
-      'https://scontent.ftun5-1.fna.fbcdn.net/v/t1.6435-9/86496976_191040035611506_8182767899883077632_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=730e14&_nc_ohc=3R_831s1cRYAX8Vzv2Q&_nc_ht=scontent.ftun5-1.fna&oh=0fe289e9c5a2fbe62c70cb2ef14f86cc&oe=60CF79E2',
-      'https://scontent.ftun5-1.fna.fbcdn.net/v/t1.6435-9/85073281_191040628944780_4637879739770470400_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=730e14&_nc_ohc=lsKNI2WDYPEAX9WFMDd&_nc_oc=AQnJ4M8hdncOgEPWcibKYwfMAWyA94dnMs8HUlEoQlngfTCdWG75FSGQ5u-JoeCez8g&_nc_ht=scontent.ftun5-1.fna&oh=f0ccf9e090fa37cab52753d8efb060a5&oe=60CEF2DC',
-      'https://scontent.ftun5-1.fna.fbcdn.net/v/t1.6435-9/84842394_191040498944793_4394626892502663168_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=730e14&_nc_ohc=mjwCR6hvXY8AX_1LBCf&_nc_ht=scontent.ftun5-1.fna&oh=e0f1ea4224a66c43c964bcd82c50e032&oe=60CDA9FB',
-      'https://scontent.ftun5-1.fna.fbcdn.net/v/t1.6435-9/84690891_191040215611488_507295097184845824_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=730e14&_nc_ohc=nvNb4UW32pkAX8ghewn&_nc_ht=scontent.ftun5-1.fna&oh=a23a8a3860edef3e9290e78730f43089&oe=60CEE864',
-      'https://scontent.ftun5-1.fna.fbcdn.net/v/t1.6435-9/84701558_191040135611496_7521114916485332992_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=730e14&_nc_ohc=kE-BwNckNUAAX9gJY-X&_nc_ht=scontent.ftun5-1.fna&oh=f5251c995e21f3c49964bfcb72c331ea&oe=60CFD0BD',
-      'https://scontent.ftun5-1.fna.fbcdn.net/v/t1.6435-9/84690891_191040595611450_9124267698019106816_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=730e14&_nc_ohc=RCRrQ1aRjYoAX_C-ziX&_nc_ht=scontent.ftun5-1.fna&oh=1a9ca0deded06543f88a1a5ea4fb3cb0&oe=60CFD7AB',
-      'https://scontent.ftun5-1.fna.fbcdn.net/v/t1.6435-9/84835957_191040278944815_6594800409016008704_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=730e14&_nc_ohc=YRqp7waRwPIAX9PvUz0&_nc_ht=scontent.ftun5-1.fna&oh=6b1dd66f790515706b4ef039b7b52aed&oe=60CEDD1B',
-      'https://scontent.ftun5-1.fna.fbcdn.net/v/t1.6435-9/85003930_191040695611440_8260561512939126784_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=730e14&_nc_ohc=JLjgIA_iseAAX-jJd-c&_nc_ht=scontent.ftun5-1.fna&oh=2168e3032a27954d91f0eb33ad4a2502&oe=60D00954',
-      'https://scontent.ftun5-1.fna.fbcdn.net/v/t1.6435-9/84616462_191040765611433_7934867296705576960_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=730e14&_nc_ohc=7DxSa2tsDFkAX-7UUr-&_nc_ht=scontent.ftun5-1.fna&oh=c13982d68b250d7959d57a47c0f88664&oe=60CCB975',
-      'https://scontent.ftun5-1.fna.fbcdn.net/v/t1.6435-9/84606842_191041235611386_9217955378719883264_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=730e14&_nc_ohc=ngCIpSNC6HgAX_poz5L&_nc_ht=scontent.ftun5-1.fna&oh=3da33a150b6bb2331f29a09578686482&oe=60CDDB1F',
-      'https://scontent.ftun5-1.fna.fbcdn.net/v/t1.6435-9/85000775_191040928944750_3923432996895457280_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=730e14&_nc_ohc=0DzpCtdr7q4AX9AQUoX&_nc_ht=scontent.ftun5-1.fna&oh=4fc35771315b6d18ad022e9acbd6c165&oe=60D011A9',
-      'https://scontent.ftun5-1.fna.fbcdn.net/v/t1.6435-9/86461626_191040972278079_5817401776432742400_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=730e14&_nc_ohc=3rkGUbUztH0AX91iB-Q&_nc_ht=scontent.ftun5-1.fna&oh=0c8c35e83f9c11351299a3224e0ae555&oe=60CF8E04',
-      'https://scontent.ftun10-1.fna.fbcdn.net/v/t1.6435-9/84835957_191040278944815_6594800409016008704_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=730e14&_nc_ohc=kOelIrN_04sAX_QPaz6&_nc_ht=scontent.ftun10-1.fna&oh=fb2f8691563007eda5e486f0af167ef9&oe=6165281B',
-      'https://scontent.ftun5-1.fna.fbcdn.net/v/t1.6435-9/85012350_191041065611403_6647346782671994880_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=730e14&_nc_ohc=9TYYaeyxgWYAX83Hac1&_nc_ht=scontent.ftun5-1.fna&oh=92978f4880a691e249d0a21879a7c618&oe=60CD7824',
-      'https://scontent.ftun5-1.fna.fbcdn.net/v/t1.6435-9/85011392_191358078913035_2636840560870031360_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=730e14&_nc_ohc=bLDB36EVgpkAX94YmY9&_nc_ht=scontent.ftun5-1.fna&oh=f4088eda2fa1e827106f4d3bbc0ebbd2&oe=60CE3A62',
-      'https://scontent.ftun5-1.fna.fbcdn.net/v/t1.6435-9/85084419_191041105611399_7923286428493021184_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=730e14&_nc_ohc=ywvg50z7ekEAX-0lCqU&_nc_ht=scontent.ftun5-1.fna&oh=0ec7f3c0168762a7e593a544b990185a&oe=60D052AA',
-      'https://scontent.ftun5-1.fna.fbcdn.net/v/t1.6435-9/84954510_191041185611391_2268152850125160448_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=730e14&_nc_ohc=XxdEIrKqTlMAX_NQ8Id&_nc_ht=scontent.ftun5-1.fna&oh=9d8daf7840847072948db9b9009c140c&oe=60CE1385',
-      'https://scontent.ftun5-1.fna.fbcdn.net/v/t1.6435-9/85047029_191039885611521_7560554213890064384_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=730e14&_nc_ohc=oEvt2BVWbB4AX9Nlf-M&_nc_ht=scontent.ftun5-1.fna&oh=fff7d7b1e038c4ed27566a9ae8f1ab69&oe=60CD7148',
+      'https://res.cloudinary.com/douscs2ve/image/upload/v1697831959/1623317030267_udme7f.jpg',
+      'https://res.cloudinary.com/douscs2ve/image/upload/v1697831973/1623317009272_xj6tum.jpg',
+      'https://res.cloudinary.com/douscs2ve/image/upload/v1697831987/1623317032069_bnf8ft.jpg',
+      'https://res.cloudinary.com/douscs2ve/image/upload/v1697832003/1623317021451_mardvb.jpg',
+      'https://res.cloudinary.com/douscs2ve/image/upload/v1697832015/1623317013260_ybiqrk.jpg',
+      'https://res.cloudinary.com/douscs2ve/image/upload/v1697832026/1623317032528_u3m3el.jpg',
+      'https://res.cloudinary.com/douscs2ve/image/upload/v1697832036/1623317010300_lf5cp7.jpg',
+      'https://res.cloudinary.com/douscs2ve/image/upload/v1697832054/1623317014837_io8ogj.jpg',
+      'https://res.cloudinary.com/douscs2ve/image/upload/v1697832091/1623317034324_orcio2.jpg',
     ],
     date: '2020-02-12',
-    fblink: 'https://www.facebook.com/114535926595251/posts/191042645611245/',
-    instalink: 'https://www.instagram.com/p/B8dj7oYn8EG/',
+    fblink: 'https://www.linkedin.com/feed/update/urn:li:activity:6808685137472049152/',
+    instalink: 'https://www.linkedin.com/feed/update/urn:li:activity:6808685137472049152/',
     likes: 8,
     views: 28,
   },
@@ -2043,7 +2031,7 @@ export const ARTWORKS: Artwork[] = [
             "instalink":"https://www.instagram.com/p/CL3yggynwoa/",
             "likes": 8,
             "views": 28
-          } */ {
+          }  {
     id: '53',
     title: 'Logos for Tunisian cities v2.0',
     MainImage:
@@ -2082,5 +2070,5 @@ export const ARTWORKS: Artwork[] = [
     instalink: 'https://www.instagram.com/p/CP7wwa2nOl3/',
     likes: 8,
     views: 28,
-  },
+  },*/
 ];

@@ -44,7 +44,7 @@ hr {
 footer {
     background-color: #383838;
 }
-footer p,a{
+footer p,a,h1{
     color: white;
 }
 .social{

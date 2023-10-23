@@ -11,7 +11,9 @@
   margin: 0 auto;
   padding: 0; 
 }
-
+ul a{
+  color: #383838;
+}
 .btn-huge{
     padding-top:15px;
     padding-bottom:15px;
